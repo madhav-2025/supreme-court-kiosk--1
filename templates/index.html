@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Supreme Court Digital Kiosk</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <h1>⚖️ Supreme Court Digital Kiosk</h1>
+
+  <!-- Language Toggle -->
+  <div>
+    <label for="lang">Language: </label>
+    <select id="lang" onchange="updateLabels()">
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+    </select>
+  </div>
+
+  <!-- Case Status -->
+  <section>
+    <h2 id="caseLabel">Case Status</h2>
+    <input id="query" type="text" placeholder="Case no / Party / Advocate"/>
+    <button onclick="searchCases()">Search</button>
+    <div id="results"></div>
+    <button onclick="generateQR()">QR</button>
+    <button onclick="readAloud()">Read Aloud</button>
+    <div id="extra"></div>
+  </section>
+
+  <!-- Cause List -->
+  <section>
+    <h2 id="causeLabel">Cause List</h2>
+    <input id="dateInp" type="date"/>
+    <button onclick="loadCause()">Load</button>
+    <div id="cause"></div>
+  </section>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
+
+<section>
+  <h2>QR Code</h2>
+  <input id="qrText" type="text" placeholder="Enter text for QR">
+  <button onclick="generateQR()">Generate QR</button>
+  <div id="qrResult"></div>
+</section>
+
+
+<section>
+  <h2>Read Aloud</h2>
+  <input id="speechText" type="text" placeholder="Enter text to read aloud">
+  <button onclick="readAloud()">Speak</button>
+</section>
+
+
+

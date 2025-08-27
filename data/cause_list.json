@@ -1,0 +1,11 @@
+[
+  {
+    "date": "2025-08-27",
+    "bench": "Hon'ble CJI + J1",
+    "courtroom": "Court 1",
+    "items": [
+      { "item_no": 1, "case_number": "SC/2025/12345", "parties": "A vs. B", "time": "10:30" }
+    ]
+  }
+]
+
