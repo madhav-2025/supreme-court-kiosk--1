@@ -1,3 +1,18 @@
+## Demo Screenshots
+
+### Case Status
+![Case Status](docs/screenshots/01_case_status.png)
+
+### Cause List
+![Cause List](docs/screenshots/02_cause_list.png)
+
+### QR Demo
+![QR Code](docs/screenshots/03_qr_demo.png)
+
+### Read Aloud
+![Read Aloud](docs/screenshots/04_read_aloud.png)
+
+
 # Supreme Court Digital Kiosk
 
 Interactive kiosk app for Supreme Court case info and cause list.
